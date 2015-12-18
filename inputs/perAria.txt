@@ -1,0 +1,14 @@
+public class perimetruaria {
+	public static void main ( String [ ] args ) throws java . io . IOException {
+		peraria ( ) ;
+	}
+	public static void peraria ( ) throws java . io . NumberFormatException , java . io . IOException {
+		System . out . print ( " dati raza " ) ;
+		java . io . BufferedReader br = new java . io . BufferedReader ( new java . io . InputStreamReader ( System . in ) ) ;
+		int raza = Integer . parseInt ( br . readLine ( ) ) ;	
+		if ( raza < 1 )
+			return 0 ;
+		System . out . println ( " perimetrul este " + 2 * 3 * raza ) ;
+		System . out . println ( " aria este " + 3 * raza * raza ) ;
+	}
+}

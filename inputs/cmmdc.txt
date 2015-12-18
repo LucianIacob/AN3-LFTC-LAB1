@@ -1,0 +1,21 @@
+public class cmmdc {
+	public static void main ( String [ ] args ) throws NumberFormatException , java . io . IOException {
+		cmmdc ( ) ;
+	}
+	public static void cmmdc ( ) throws NumberFormatException , java . io . IOException {	
+		java . io . BufferedReader br = new java . io . BufferedReader ( new java . io . InputStreamReader ( System . in ) ) ;
+		System . out . print ( " dati primul numar " ) ;
+		int nr = Integer . parseInt ( br . readLine ( ) ) ;
+		System . out . print ( " dati al doilea numar " ) ;
+		int nrr = Integer . parseInt ( br . readLine ( ) ) ;
+		int rest ;
+		do 
+		{
+			rest = Math . abs ( nr ) % Math . abs ( nrr ) ;
+			nr = Math . abs ( nrr ) ;
+			nrr = rest ;	
+		}
+		while ( rest > 0 ) ;
+		System . out . println ( " cmmdc = " + nr1 ) ;
+	}
+}
